@@ -1,7 +1,42 @@
-
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tabla dinámica de Usuarios y Formulario con Bootstrap</title>
+  <!-- CSS de Bootstrap -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+</head>
+<body>
   <div class="container mt-5">
     <h1 class="text-center mb-4">Lista de Usuarios</h1>
-    <table class="table table-striped table-border
+    <table class="table table-striped table-bordered table-hover" id="usuariosTabla">
+      <thead class="table-dark">
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Usuario</th>
+          <th scope="col">Contraseña</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>pedro</td>
+          <td>1234</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>alankiller23</td>
+          <td>alanfakinkiller323</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>tomi</td>
+          <td>tomasa1234</td>
+        </tr>
         <tr>
           <th scope="row">4</th>
           <td>atontoles</td>
@@ -24,7 +59,8 @@
     <form id="usuarioForm">
       <div class="form-group mb-3">
         <label for="inputUsuario">Usuario</label>
-      
+        <input type="text" class="form-control" id="inputUsuario" placeholder="Ingrese usuario" required />
+      </div>
       <div class="form-group mb-3">
         <label for="inputPassword">Contraseña</label>
         <input type="password" class="form-control" id="inputPassword" placeholder="Ingrese contraseña" required />
